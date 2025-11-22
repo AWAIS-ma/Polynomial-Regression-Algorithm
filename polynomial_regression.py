@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 
 # 1. DATASET IMPORT
-data = pd.read_csv(r"D:\Machine Learning Alogrithms\polynomial_regression\Polynomial-Regression-Algorithm\energy_data.csv")
+data = pd.read_csv(r"energy_data.csv")  
 print("\n----- DATASET LOADED -----")
 
 # 2. DEFINE INPUT & TARGET
