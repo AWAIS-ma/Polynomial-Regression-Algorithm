@@ -4,6 +4,7 @@ import numpy as np
 # 1. DEFINE DATA RANGES
 max_entries = 300
 temperatures = np.linspace(10, 40, max_entries)  # 10°C se 40°C 
+temperatures = np.round(temperatures, 2)
 humidity = np.linspace(85, 98, max_entries)      # Humidity % 85-98
 wind_speed = np.linspace(15, 21, max_entries)   # Wind Speed 15-21 km/h
 
