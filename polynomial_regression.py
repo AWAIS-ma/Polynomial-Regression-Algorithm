@@ -12,7 +12,7 @@ data = pd.read_csv("D:\Machine Learning Alogrithms\polynomial_regression\Polynom
 
 
 print("\n----- DATASET LOADED -----")
-print(data.head())
+
 
 # 2. DEFINE INPUT & TARGET
 
