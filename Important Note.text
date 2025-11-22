@@ -1,0 +1,6 @@
+Note About the Dataset
+The dataset provided in this repository is a dummy dataset created for demonstration purposes only. It is highly regular and simplified, intended to illustrate the workings of the polynomial regression algorithm.
+Electricity usage in this dataset follows a nearly linear and deterministic pattern
+As a result, evaluation metrics (MSE, RMSE, R², Adjusted R²) may appear perfect or unrealistically high, which does not reflect real-world performance.
+In practice, real datasets will contain more variability, noise, and complexity. Users should replace this dummy dataset with actual, real-world data to obtain meaningful predictions and evaluation results.
+You can freely use this dataset to run and test the code, but keep in mind that it is for demonstration purposes only and is not representative of real electricity usage data.
