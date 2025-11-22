@@ -8,39 +8,34 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 
 # 1. DATASET IMPORT
-data = pd.read_csv("D:\Machine Learning Alogrithms\polynomial regression\energy_data.csv")
+data = pd.read_csv("D:\Machine Learning Alogrithms\polynomial_regression\Polynomial-Regression-Algorithm\energy_data.csv")
 
 
 print("\n----- DATASET LOADED -----")
 print(data.head())
 
-# ---------------------------
 # 2. DEFINE INPUT & TARGET
-# ---------------------------
+
 # Input features: Temperature, Humidity, Wind_Speed
 X = data[["Temperature", "Humidity", "Wind_Speed"]].values
 
 # Target: Electricity Usage
 y = data["Electricity_Usage"].values
 
-# ---------------------------
 # 3. POLYNOMIAL TRANSFORMATION
-# ---------------------------
+
 degree = 2  # Polynomial degree
 poly = PolynomialFeatures(degree=degree)
 X_poly = poly.fit_transform(X)
 
-# ---------------------------
 # 4. LINEAR REGRESSION MODEL ON POLYNOMIAL FEATURES
-# ---------------------------
 model = LinearRegression()
 model.fit(X_poly, y)
 
 print("\nPolynomial Regression Model Ready")
 
-# ---------------------------
 # 5. VISUALIZATION (Temperature vs Electricity Usage)
-# ---------------------------
+
 plt.figure(figsize=(8,5))
 plt.scatter(data["Temperature"], y, color='blue', label="Actual Usage")
 
